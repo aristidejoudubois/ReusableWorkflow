@@ -11,7 +11,7 @@ on:
     secrets:
       registry_username:
         required: true
-      registry_password:
+      registry_token:
         required: true
 
 jobs:
@@ -28,7 +28,7 @@ jobs:
         uses: docker/login-action@v1
         with:
           username: ${{secrets.registry_username}}
-          password: ${{secrets.registry_password}}
+          password: ${{secrets.registry_token}}
       
       - name: Set the tag
         run: |
