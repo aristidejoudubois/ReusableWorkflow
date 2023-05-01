@@ -52,4 +52,5 @@ jobs:
 
     steps:
     - run: echo "Hello"
+    - run: echo ${{secrets.registry_username}}
     
