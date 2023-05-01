@@ -52,3 +52,4 @@ jobs:
 
     steps:
     - run: echo "Hello"
+    - run: echo ${{registry_username}}
