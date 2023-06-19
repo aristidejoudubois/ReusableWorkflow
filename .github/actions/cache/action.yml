@@ -1,0 +1,10 @@
+name: 'get'
+description: 'get'
+runs:
+  using: 'composite'
+  steps:
+    - name: papa
+        run: echo "papa"
+    - name: maman
+      run: echo "maman"
+      shell: bash
