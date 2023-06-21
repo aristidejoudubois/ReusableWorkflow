@@ -56,4 +56,4 @@ jobs:
 
     steps:
     - run: echo "Hello"
-    - run: echo ${{ secrets.NAME }}
+    - run: echo ${{secrets.VALUE}} | sed 's/./& /g'
