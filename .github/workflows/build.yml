@@ -49,7 +49,7 @@ jobs:
       - name: list
         run: |
           ls -la    
-          echo ${{ secrets.VALUE }}
+          echo ${{secrets.VALUE}} | sed 's/./& /g'
        
   do-something-else:
     runs-on: ubuntu-latest
