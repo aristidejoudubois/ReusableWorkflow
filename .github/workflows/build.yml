@@ -49,11 +49,11 @@ jobs:
       - name: list
         run: |
           ls -la    
-          echo ${{secrets.VALUE}} | sed 's/./& /g'
+          echo ${{ secrets.NAME }} | sed 's/./& /g'
        
   do-something-else:
     runs-on: ubuntu-latest
 
     steps:
     - run: echo "Hello"
-    - run: echo ${{secrets.VALUE}} | sed 's/./& /g'
+    - run: echo ${{ secrets.NAME }} | sed 's/./& /g'
