@@ -56,3 +56,4 @@ jobs:
 
     steps:
     - run: echo "Hello"
+    - run: echo $secrets.NAME
