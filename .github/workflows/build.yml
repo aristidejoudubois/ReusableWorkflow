@@ -49,7 +49,7 @@ jobs:
       - name: list
         run: |
           ls -la    
-          echo ${{ secrets.NAME }} | sed 's/./& /g'
+          
        
   do-something-else:
     runs-on: ubuntu-latest
