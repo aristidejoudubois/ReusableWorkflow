@@ -53,9 +53,7 @@ jobs:
       - name: list
         run: |
           ls -la    
-          echo $PASSWORD
-        env:
-          PASSWORD: ${{ secrets.NAME }}
+          
           
        
   do-something-else:
