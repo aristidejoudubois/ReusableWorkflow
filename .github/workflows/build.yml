@@ -2,10 +2,6 @@ name: build
 
 on:
   workflow_call:
-    output:
-      workflow_output1:
-        description: "name"
-        value: ${{ jobs.my_job.outputs.job_output1 }}
     inputs:
       image_name:
         required: true
